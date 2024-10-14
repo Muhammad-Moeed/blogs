@@ -1,11 +1,14 @@
 import Header from "./components/header";
-import Blogs from "./components/home"; 
+import Content from "./components/home";
+import Footer from "./components/footer";
 
 export default function Home() {
   return (
     <div>
       <Header />
-      <Blogs />
+      <Content />
+      <Footer/>
+      
     </div>
   );
 }

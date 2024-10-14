@@ -28,14 +28,14 @@ export default function Header(){
           </Link>
         </li>
         <li className='max-lg:border-b border-gray-300 max-lg:py-3 px-3'>
-          <Link href='javascript:void(0)'
-            className='hover:text-[#007bff] text-[#007bff] block font-semibold text-[15px]'>Home</Link>
+          <Link href='/'
+            className=' focus:text-blue-600 hover:text-[#007bff] block font-semibold text-[15px]'>Home</Link>
         </li>
-        <li className='max-lg:border-b border-gray-300 max-lg:py-3 px-3'><Link href='javascript:void(0)'
-            className='hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]'>About us</Link>
+        <li className='max-lg:border-b border-gray-300 max-lg:py-3 px-3'><Link href='/aboutus'
+            className='focus:text-blue-600 hover:text-[#007bff] block font-semibold text-[15px]'>About us</Link>
         </li>
-        <li className='max-lg:border-b border-gray-300 max-lg:py-3 px-3'><Link href='javascript:void(0)'
-            className='hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]'>Blogs</Link>
+        <li className='max-lg:border-b border-gray-300 max-lg:py-3 px-3'><Link href='/blogs'
+            className='focus:text-blue-600 hover:text-[#007bff] block font-semibold text-[15px]'>Blogs</Link>
         </li>
         
       </ul>
