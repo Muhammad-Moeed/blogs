@@ -9,6 +9,7 @@ type Data = {
   image: string;
   author:string;
   date:string;
+  slug :string;
 };
 
 const blog: Data[] = [
@@ -19,6 +20,7 @@ const blog: Data[] = [
     image: "/html.jpg",
     author: "Muhammad Moeed",
     date: "October 10, 2024",
+    slug:"html"
 
   },
   {
@@ -28,6 +30,7 @@ const blog: Data[] = [
     image: "/css.jpg",
     author: "Muhammad Moeed",
     date: "October 10, 2024",
+    slug:"css"
 
   },
   {
@@ -36,6 +39,7 @@ const blog: Data[] = [
     image: "/js.jpg",
     author: "Muhammad Moeed",
     date: "October 10, 2024",
+    slug:"javascript"
 
   },
   {
@@ -45,6 +49,7 @@ const blog: Data[] = [
     image: "/tailwend.jpeg",
     author: "Muhammad Moeed",
     date: "October 10, 2024",
+    slug:"tailwind"
 
   },
   {
@@ -54,6 +59,7 @@ const blog: Data[] = [
     image: "/typescript.jpg",
     author: "Muhammad Moeed",
     date: "October 10, 2024",
+    slug:"typescript"
 
   },
   {
@@ -62,6 +68,7 @@ const blog: Data[] = [
     image: "/nextjs.png",
     author: "Muhammad Moeed",
     date: "October 10, 2024",
+    slug:"nextjs"
 
   },
 ];
@@ -82,7 +89,7 @@ export default function Content() {
           >
             <Link href="#">
               <Image
-                className="rounded-t-lg w-full sm:w-full h-[150px]"
+                className="rounded-t-lg w-full sm:w-full h-[200px] sm:h-[150px]"
                 src={item.image}
                 width={400}
                 height={300}
@@ -103,7 +110,7 @@ export default function Content() {
               </div>
               <Link
                 className="text-white bg-black focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center"
-                href="#"
+                href={`/blogs/pages/${item.slug}`}
               >
                 Read more
               </Link>
